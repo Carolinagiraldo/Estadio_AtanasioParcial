@@ -23,7 +23,7 @@
             <div class="mb-3">
                 <label>Portería</label>
                 <div>
-                    <select class="form-select" @bind="ticketDTO.Entrance" disabled="@isSelectDisabled">
+                    <select class="form-select" @bind="ticketDTO.Entrance">
 
                         @foreach (var entrance in Enum.GetNames(typeof(EntranceType)))
                         {
